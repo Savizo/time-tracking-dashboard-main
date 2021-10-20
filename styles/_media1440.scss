@@ -1,0 +1,80 @@
+@media screen and (min-width: 1350px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 77%;
+    height: auto;
+
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 3rem;
+  }
+
+  .menu-card {
+    grid-row: 1 / span 2;
+    grid-column: unset;
+    height: 100%;
+
+    .card-report {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 70%;
+      padding: 3.5rem 3rem;
+
+      img {
+        width: 6rem;
+      }
+
+      .report {
+        margin-top: 1rem;
+
+        .name {
+          font-size: auto; // or 4rem
+        }
+      }
+    }
+
+    .menu {
+      height: 30%;
+
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .regular-card {
+    .property-card {
+      margin-top: 4.5rem;
+      padding: 2.8rem;
+
+      .row {
+        .title {
+          font-size: 1.2rem; // or
+        }
+      }
+
+      .row-2 {
+        .hours {
+          font-size: auto; // or 5.5rem
+          padding-top: 1.9rem;
+        }
+
+        .description {
+          font-size: 1rem;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
